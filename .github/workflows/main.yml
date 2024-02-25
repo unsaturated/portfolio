@@ -1,14 +1,23 @@
-name: Portfolio
+name: Portfolio Build and Deploy
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - [$default-branch]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    name: Build and Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,8 +29,16 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - name: Upload
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "dist/"
-          
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v3
