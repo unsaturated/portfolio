@@ -1,0 +1,26 @@
+name: Portfolio
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v4
+      - name: NPM
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      - run: npm build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist/"
+          
