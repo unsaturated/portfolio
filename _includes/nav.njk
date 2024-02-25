@@ -1,0 +1,28 @@
+<nav class="navbar sticky-top navbar-expand-md px-2" style="background-color: #FFFFFF">
+    <button 
+        class="navbar-brand navbar-toggler navbar-toggler-left" 
+        type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navNav" 
+        aria-controls="navNav" 
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img src="/img/earth.svg" alt="" width="28" height="28">
+    </button>
+
+    <img class="d-none d-md-block d-lg-block d-xl-block mr-2" src="/img/earth.svg" alt="" width="28" height="28">
+
+    <span class="navbar-text text-right d-sm-block fw-bold d-md-none">{{ pkg.author.name }}</span>
+
+    <div class="collapse navbar-collapse" id="navNav" class="navbar-brand-hover-color: #FFFFFF">
+        <div class="navbar-nav">
+        {% for item in site.menu %}
+          <a class="nav-item nav-link text-dark" href="{{ item.url }}">
+            <i class="{{ item.icon }}" aria-hidden="true"></i>
+            {{ item.text }}
+          </a>
+        {%- endfor %}
+        </div>
+    </div>
+    <span class="navbar-text text-right text-nowrap fw-bold d-none d-md-block d-xl-block">{{ pkg.author.name }}</span>
+</nav>

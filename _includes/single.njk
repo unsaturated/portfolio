@@ -1,0 +1,99 @@
+{% extends 'base.njk' %}
+
+{% block body %}
+
+    {% include 'nav.njk' %}
+
+    <div class="container">
+        <hr/>
+        <h1 class="display-4">{{ title }}</h1>
+        {% if subtitle|length > 0 %}
+        <p class="lead text-secondary">{{ subtitle }}</p>
+            {% if supplementary|length > 0 %}
+                {% for item in supplementary %}
+                    {% set _br = '<br/>' if (loop.revindex0 >= 0 and not loop.first) else '' %}
+                    {% if item.file %}
+                        {{ _br|safe }}
+                        <small class="text-secondary">
+                            <i class="{{ item.icon|default('bi bi-link') }}"></i> 
+                            <a href="{{ item.file }}" 
+                                class="link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                {{ item.text|default('Download') }}
+                            </a>
+                        </small>
+                    {% elseif item.link %}
+                        {{ _br|safe }}
+                        <small class="text-secondary">
+                            <i class="{{ item.icon|default('bi bi-link') }}"></i> 
+                            <a href="{{ item.link }}" 
+                                class="link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                {{ item.text|default('Link') }}
+                            </a>
+                        </small>
+                    {% elseif item.image %}
+                        {% set _modalId = item.text|trim|lower|replace(r/[\.\s]+/g, "-") %}
+                        <small class="text-secondary">
+                            <i class="{{ item.icon|default('bi bi-link') }}"></i> 
+                            <a href="#{{ _modalId }}" 
+                                data-bs-toggle="modal"
+                                data-bs-target="#{{ _modalId }}"
+                                class="link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                {{ item.text }}
+                            </a>
+                        </small>
+                    {% else %}
+                        {{ _br|safe }}
+                        <small class="text-secondary">
+                        <i class="{{ item.icon|default('bi bi-circle') }}"></i> {{ item.text }}</small>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+         {% endif %}
+        <hr/>
+        {{ content | safe }}
+    </div>
+
+    {% for item in supplementary %}
+    {% if item.image %}
+    {% set _modalId = item.text|trim|lower|replace(r/[\.\s]+/g, "-") %}
+    <div class="modal fade" tabindex="-1" id="{{ _modalId }}">
+        <div class="modal-dialog modal-dialog-centered shadow-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal"
+                        data-bs-target="#{{ _modalId }}"
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                        <figure class="figure">
+                            <picture>
+                                <source
+                                    type="image/jpeg"
+                                    srcset="{{ item.image }}"
+                                    sizes="100vw"
+                                />
+                                <img
+                                    alt="Hey!"
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="figure-img img-fluid"
+                                    src="{{ item.image }}"
+                                    srcset="{{ item.image }}"
+                                    sizes="100vw"
+                                />
+                            </picture>
+                            <figcaption class="figure-caption text-center">{{ item.caption or item.text }}</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+{% endblock %}

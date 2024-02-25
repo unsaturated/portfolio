@@ -1,0 +1,33 @@
+{% extends 'base.njk' %}
+
+{% block body %}
+
+    {% include 'nav.njk' %}
+
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 g-md-3 p-3">
+            {% for child in collections.portfolio %}
+            <div class="col">
+                {% set portfolio_title = child.data.shorttitle if (child.data.shorttitle|length > 0) else child.data.title %}
+                {% set blog_image = "img/" + child.data.image %}
+                {% set subtitle = child.data.subtitle %}
+                <div class="card p-3 shadow-sm mb-2 ">
+                    {% if (child.data.image | length) > 0 %}
+                        <a href="{{ child.url }}"><img class="card-img-top mx-auto d-block img-fluid rounded" src="{{ blog_image }}" alt="{{ child.title }}"></a>
+                    {% endif %}
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="{{ child.url }}" class="link-underline-light">{{ portfolio_title }}</a></h4>
+                        <p class="card-text">{{ child.data.subtitle }}</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <p class="card-text fw-lighter"><small class="text-body-secondary">{{ child.data.tags | exclude('portfolio') | join(', ') | lower}}</small></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock %}
