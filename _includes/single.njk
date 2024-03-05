@@ -57,7 +57,7 @@
     {% if item.image %}
     {% set _modalId = item.text|trim|lower|replace(r/[\.\s]+/g, "-") %}
     <div class="modal fade" tabindex="-1" id="{{ _modalId }}">
-        <div class="modal-dialog modal-dialog-centered shadow-sm">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" 

@@ -52,6 +52,8 @@ module.exports = function (eleventyConfig) {
             const purgeCSSResult = await new PurgeCSS().purge({
                 content: [`${dir.output}/**/*.html`],
                 css: [`${dir.output}/**/*.css`],
+                variables: true,
+                safelist: ['modal-backdrop']
             });
             purgeCSSResult.forEach(async (result) => {
                 if (!result.rejected) {
