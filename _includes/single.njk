@@ -32,6 +32,7 @@
                         </small>
                     {% elseif item.image %}
                         {% set _modalId = item.text|trim|lower|replace(r/[\.\s]+/g, "-") %}
+                        {{ _br|safe }}
                         <small class="text-secondary">
                             <i class="{{ item.icon|default('bi bi-link') }}"></i> 
                             <a href="#{{ _modalId }}" 
@@ -77,7 +78,7 @@
                                     sizes="100vw"
                                 />
                                 <img
-                                    alt="Hey!"
+                                    alt="{{ item.caption or item.text }}"
                                     loading="lazy"
                                     decoding="async"
                                     class="figure-img img-fluid"

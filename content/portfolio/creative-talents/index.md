@@ -15,6 +15,10 @@ metadata:
 supplementary:
     - text: 4 minute read
       icon: bi-clock
+    - text: The signed certificate
+      image: essay-certificate.jpg
+      caption: Presented on December 4, 2000
+      icon: bi-award
 ---
 
 Evolution has its own order much like engineering. First, there is randomness. Then, when randomness leads to failure, evolution slowly removes unnecessary engineering concepts. An engineer has to find his own randomness and creativity. Progress in a technological field requires experimentation even if the risk is wasted time or even obsolescence. This is the nature of creativity in engineering.

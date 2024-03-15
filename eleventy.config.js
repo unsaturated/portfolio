@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
         "node_modules/bootstrap/dist/js/bootstrap.min.js": "/js/main.js"
     });
     eleventyConfig.addPassthroughCopy("content/resume/**/*.{pdf,jpg,jpeg,png}");
+    eleventyConfig.addPassthroughCopy("content/portfolio/creative-talents/essay-certificate.jpg");
     eleventyConfig.addPassthroughCopy("content/portfolio/**/*.{pdf,mp4}");
 
     eleventyConfig.addWatchTarget("content/**/*.{md,svg,webp,png,jpeg}");
