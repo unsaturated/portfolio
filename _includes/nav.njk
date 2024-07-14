@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-md px-2" style="background-color: #FFFFFF">
     <button 
-        class="navbar-brand navbar-toggler navbar-toggler-left" 
+        class="navbar-brand navbar-toggler navbar-toggler-left focus-ring focus-ring-secondary"
         type="button" 
         data-bs-toggle="collapse"
         data-bs-target="#navNav" 
@@ -14,7 +14,7 @@
 
     <span class="navbar-text text-right d-sm-block fw-bold d-md-none">{{ pkg.author.name }}</span>
 
-    <div class="collapse navbar-collapse" id="navNav" class="navbar-brand-hover-color: #FFFFFF">
+    <div class="collapse navbar-collapse ms-2" id="navNav" class="navbar-brand-hover-color: #FFFFFF">
         <div class="navbar-nav">
         {% for item in site.menu %}
           <a class="nav-item nav-link text-dark" href="{{ item.url }}">
