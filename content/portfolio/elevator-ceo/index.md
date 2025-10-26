@@ -49,69 +49,73 @@ Think you know everything about the Elevator CEO? Maybe you should try to decode
   * **All Thumbs.** Left and right thumbs are invited to play. Switching control sides is easy.
 
 <div class="d-flex justify-content-center">
-        <div class="col-sm-4 p-2">
-            <figure class="figure">
-                {% image "0-home.jpg",
-                "Home screen and menu",
-                [320, 640, null],
-                "320px, 640px, 100vw",
-                "figure-img img-fluid border secondary-border-subtle"
-                %}
-                <figcaption class="figure-caption text-center">Home screen and menu</figcaption>
-            </figure>
-        </div>
-        <div class="col-sm-4 p-2">
-            <figure class="figure">
-                {% image "3-treasure.jpg",
-                "Game area for left-handed players",
-                [320, 640, null],
-                "320px, 640px, 100vw",
-                "figure-img img-fluid border secondary-border-subtle"
-                %}
-                <figcaption class="figure-caption text-center">Game area for left-handed players</figcaption>
-            </figure>
-        </div>
-        <div class="col-sm-4 p-2">
-            <figure class="figure">
-                {% image "4-scores.jpg",
-                "Top 3 scores",
-                [320, 640, null],
-                "320px, 640px, 100vw",
-                "figure-img img-fluid border secondary-border-subtle"
-                %}
-                <figcaption class="figure-caption text-center">Top 3 scores</figcaption>
-            </figure>
-        </div>
+  <div class="row">
+    <div class="col-sm-4 p-2">
+        <figure class="figure">
+            {% image "0-home.jpg",
+            "Home screen and menu",
+            [320, 640, null],
+            "320px, 640px, 100vw",
+            "figure-img img-fluid border secondary-border-subtle"
+            %}
+            <figcaption class="figure-caption text-center">Home screen and menu</figcaption>
+        </figure>
     </div>
+    <div class="col-sm-4 p-2">
+        <figure class="figure">
+            {% image "3-treasure.jpg",
+            "Game area for left-handed players",
+            [320, 640, null],
+            "320px, 640px, 100vw",
+            "figure-img img-fluid border secondary-border-subtle"
+            %}
+            <figcaption class="figure-caption text-center">Game area for left-handed players</figcaption>
+        </figure>
+    </div>
+    <div class="col-sm-4 p-2">
+        <figure class="figure">
+            {% image "4-scores.jpg",
+            "Top 3 scores",
+            [320, 640, null],
+            "320px, 640px, 100vw",
+            "figure-img img-fluid border secondary-border-subtle"
+            %}
+            <figcaption class="figure-caption text-center">Top 3 scores</figcaption>
+        </figure>
+    </div>
+  </div>
+</div>
 
 ## Sketches
 I started sketching game ideas in May 2010. Several weeks later I had over 60 pages of various drawings, notes, and flow charts. I only used a pen and grid paper. The ideas eventually converged around an elevator-based game.
 
 <div class="d-flex justify-content-center">
-  <div class="col-sm-2"></div>
-  <div class="col-sm-4 p-2">
-    <figure class="figure">
-        {% image "sketch-board-1.jpg",
-        "Earliest sketches of play area",
-        [320, 640, null],
-        "320px, 640px, 100vw",
-        "figure-img img-fluid border secondary-border-subtle"
-        %}
-        <figcaption class="figure-caption text-center">Earliest sketches of play area</figcaption>
-    </figure>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4 p-2">
+        <figure class="figure">
+            {% image "sketch-board-1.jpg",
+            "Earliest sketches of play area",
+            [320, 640, null],
+            "320px, 640px, 100vw",
+            "figure-img img-fluid border secondary-border-subtle"
+            %}
+            <figcaption class="figure-caption text-center">Earliest sketches of play area</figcaption>
+        </figure>
+    </div>
+    <div class="col-sm-4 p-2">
+        <figure class="figure">
+            {% image "sketch-controls-1.jpg",
+            "Evolution of vertical controls",
+            [320, 640, null],
+            "320px, 640px, 100vw",
+            "figure-img img-fluid border secondary-border-subtle"
+            %}
+            <figcaption class="figure-caption text-center">Evolution of vertical controls</figcaption>
+        </figure>
+    </div>
+    <div class="col-sm-2"></div>
   </div>
-  <div class="col-sm-4 p-2">
-    <figure class="figure">
-        {% image "sketch-controls-1.jpg",
-        "Evolution of vertical controls",
-        [320, 640, null],
-        "320px, 640px, 100vw",
-        "figure-img img-fluid border secondary-border-subtle"
-        %}
-        <figcaption class="figure-caption text-center">Evolution of vertical controls</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-2"></div>
 </div>
 
 All of the game graphics were created in Illustrator. Most of my inspiration came from [Small World](http://www.lostgarden.com/2009/03/dancs-miraculously-flexible-game.html) graphics by Daniel Cook. Although I never throw out sketches I'm exactly the opposite with Illustrator. I'll clone a layer, refine it, and delete the old layer if its replacement is better.
@@ -229,7 +233,7 @@ Elevator CEO v1.3 added language support for Simplified Chinese. Unlike western 
         "Game tip displayed in simplified Chinese",
         [320, 640, null],
         "320px, 640px, 100vw",
-        "figure-img img-fluid"
+        "figure-img img-fluid border secondary-border-subtle"
         %}
         <figcaption class="figure-caption text-center">Game tip displayed in simplified Chinese</figcaption>
     </figure>

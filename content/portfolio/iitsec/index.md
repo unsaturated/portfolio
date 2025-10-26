@@ -80,8 +80,8 @@ A Desktop Trainer (DTT) prototype was required and the schedule was set to three
         <figure class="figure">
             {% image "fig1-cockpit.jpg",
             "Figure 1. AT-6 Desktop Trainer with Moving Map, PFD, and EICAS displays (left to right)",
-            [560, 940, null],
-            "560px, 940px, 100vw",
+            [560, 940],
+            "100vw",
             "figure-img img-fluid rounded"
             %}
             <figcaption class="figure-caption text-center">Figure 1. AT-6 Desktop Trainer with Moving Map, PFD, and EICAS displays (left to right)</figcaption>
@@ -170,8 +170,8 @@ Using a controller object acts as a clearinghouse of all ViewModel pairs, as sho
         <figure class="figure">
             {% image "fig4-associations.png",
             "Figure 4. Object Associations and Data Events",
-            [412, 824, null],
-            "412px, 824px, 100vw",
+            [412, 824],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 4. Object Associations and Data Events</figcaption>
@@ -192,8 +192,8 @@ For our instructor applications, the functional flow is easy to follow:
         <figure class="figure">
             {% image "fig5-viewmodel.png",
             "Figure 5.  ViewModel Initialization",
-            [330, 660, null],
-            "330px, 660px, 100vw",
+            [330, 660],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 5.  ViewModel Initialization</figcaption>
@@ -252,8 +252,8 @@ The FalconView map control provides a concrete example that WPF helped fulfill a
         <figure class="figure">
             {% image "fig6-mvvm.png",
             "Figure 6.  MVVM and ARINC 661",
-            [314, 629, 1258, null],
-            "314px, 629px, 1258px, 100vw",
+            [314, 629],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 6.  MVVM and ARINC 661</figcaption>
@@ -287,8 +287,8 @@ There is moderate lag when requesting a tile of map data from FalconView. For ex
         <figure class="figure">
             {% image "fig7-rotation.png",
             "Figure 7.  Map Rotation and Tiling (Only the center area is visible on the MFD)",
-            [341, null],
-            "341px, 100vw",
+            [341],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 7.  Map Rotation and Tiling (Only the center area is visible on the MFD) </figcaption>
@@ -307,8 +307,8 @@ Moving map brightness is the most trivial of all map objects to control. A WPF R
         <figure class="figure">
             {% image "fig8-mfd.jpg",
             "Figure 8.  MFD Moving Map Page with Overlays",
-            [433, null],
-            "433px, 100vw",
+            [433],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 8.  MFD Moving Map Page with Overlays</figcaption>
@@ -345,8 +345,8 @@ Developing an instructor application typically involves a lot of question/respon
         <figure class="figure">
             {% image "fig9-process.png",
             "Figure 9.  Process by Ability",
-            [412, 824, null],
-            "412px, 824px, 100vw",
+            [412, 824],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 9.  Process by Ability</figcaption>
@@ -371,8 +371,8 @@ Classes are commonly named so that both sides understand their purpose and can t
         <figure class="figure">
             {% image "fig10-middle.png",
             "Figure 10.  Using the Model as the Middle",
-            [391, 782, null],
-            "391px, 782px, 100vw",
+            [391, 782],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 10.  Using the Model as the Middle</figcaption>

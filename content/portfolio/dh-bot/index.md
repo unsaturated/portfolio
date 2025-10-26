@@ -116,8 +116,8 @@ An elaborate storyboard connects the view-controllers together. You can see how
         <figure class="figure">
             {% image "dhbot-storyboard.jpg",
             "DH Bot Storyboard",
-            [418, 837, null],
-            "418px, 837px, 100vw",
+            [418],
+            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">DH Bot Storyboard</figcaption>
@@ -138,6 +138,7 @@ In other words: **no surprises**. The app description should include all those p
 Here's a sample of the onboarding screens from DH Bot. They're displayed when the app is first started and on subsequent updates.
 
 <div class="d-flex justify-content-center">
+    <div class="row">
         <div class="col-sm-4 p-2">
             <figure class="figure">
                 {% image "dhbot-onboard1.jpg",
@@ -146,7 +147,7 @@ Here's a sample of the onboarding screens from DH Bot. They're displayed when th
                 "320px, 640px, 100vw",
                 "figure-img img-fluid border secondary-border-subtle"
                 %}
-                <figcaption class="figure-caption text-center">Slide 1 featuring "Treddy"</figcaption>
+                <figcaption class="figure-caption text-center">Slide 1 "Treddy"</figcaption>
             </figure>
         </div>
         <div class="col-sm-4 p-2">
@@ -160,7 +161,7 @@ Here's a sample of the onboarding screens from DH Bot. They're displayed when th
                 <figcaption class="figure-caption text-center">Slide 2 "Unofficial"</figcaption>
             </figure>
         </div>
-        <div class="col-md-4 p-2">
+        <div class="col-sm-4 p-2">
             <figure class="figure">
                 {% image "dhbot-onboard3.jpg",
                 "Onboarding Slide 3: You'll need a DreamHost API key. Create one with the DreamHost web panel. Come back and use it with DH Bot.",
@@ -168,12 +169,15 @@ Here's a sample of the onboarding screens from DH Bot. They're displayed when th
                 "320px, 640px, 100vw",
                 "figure-img img-fluid border secondary-border-subtle"
                 %}
-                <figcaption class="figure-caption text-center">Slide 3 - Get an API key</figcaption>
+                <figcaption class="figure-caption text-center">Slide 3 "Get an API key"</figcaption>
             </figure>
         </div>
     </div>
+</div>
 
 <div class="d-flex justify-content-center">
+    <div class="row">
+        <div class="col-sm-2 p-2"></div>
         <div class="col-sm-4 p-2">
             <figure class="figure">
                 {% image "dhbot-onboard4.jpg",
@@ -182,7 +186,7 @@ Here's a sample of the onboarding screens from DH Bot. They're displayed when th
                 "320px, 640px, 100vw",
                 "figure-img img-fluid border secondary-border-subtle"
                 %}
-                <figcaption class="figure-caption text-center">Onboarding Slide 4 - Security</figcaption>
+                <figcaption class="figure-caption text-center">Slide 4 "Security"</figcaption>
             </figure>
         </div>
         <div class="col-sm-4 p-2">
@@ -193,9 +197,11 @@ Here's a sample of the onboarding screens from DH Bot. They're displayed when th
                 "320px, 640px, 100vw",
                 "figure-img img-fluid border secondary-border-subtle"
                 %}
-                <figcaption class="figure-caption text-center">Onboarding Slide 6 - Ready</figcaption>
+                <figcaption class="figure-caption text-center">Slide 5 "Ready"</figcaption>
             </figure>
         </div>
+        <div class="col-sm-2 p-2"></div>
+    </div>
 </div>
 
 
