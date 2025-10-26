@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require('node:fs');
 
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
@@ -28,7 +27,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginImages);
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-    eleventyConfig.addPlugin(pluginBundle);
 
     eleventyConfig.addFilter("exclude", (arr, match) => {
         const matchLower = match ? match.toLowerCase() : '';

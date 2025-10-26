@@ -1,6 +1,6 @@
 {
     "name": "eleventy",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Portfolio of Matthew M. Crumley.",
     "scripts": {
         "build": "eleventy",
@@ -18,19 +18,18 @@
         "url": "https://matt.unsaturated.com"
     },
     "engines": {
-        "node": ">=14"
+        "node": ">=22"
     },
     "license": "ISC",
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.1",
-        "@11ty/eleventy-img": "^4.0.2",
-        "@11ty/eleventy-navigation": "^0.3.5",
-        "@11ty/eleventy-plugin-bundle": "^1.0.5",
-        "prettier": "^3.2.5",
-        "purgecss": "^5.0.0"
+        "@11ty/eleventy": "^3.1.2",
+        "@11ty/eleventy-img": "^6.0.4",
+        "@11ty/eleventy-navigation": "^1.0.4",
+        "prettier": "^3.6.2",
+        "purgecss": "^7.0.2"
     },
     "dependencies": {
-        "bootstrap": "^5.3.2",
-        "bootstrap-icons": "^1.11.3"
+        "bootstrap": "^5.3.8",
+        "bootstrap-icons": "^1.13.1"
     }
 }
