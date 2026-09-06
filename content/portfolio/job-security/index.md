@@ -10,8 +10,8 @@ tags:
     - paper
 metadata:
     'og:title': 'Job Security: The Changing Paradigm'
-    'og:type': 'article'
-    'og:locale': 'en_US'
+    'og:type': article
+    'og:locale': en_US
     'og:description': An analysis drawing connections between an increasingly technological society and its effects on our job stability.
 supplementary:
     - text: 10 minute read
