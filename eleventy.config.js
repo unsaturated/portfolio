@@ -114,17 +114,23 @@ module.exports = function (eleventyConfig) {
                 variables: true,
                 safelist: ['modal-backdrop']
             });
-            purgeCSSResult.forEach(async (result) => {
+            await Promise.all(purgeCSSResult.map(async (result) => {
                 if (!result.rejected) {
-                    await fs.writeFile(`${result.file}`, result.css, err => {
-                        if (err) {
-                            console.error(`CSS purge error writing file '${result.file}': ${err}`);
-                        }
-                    });
+                    await fs.promises.writeFile(`${result.file}`, result.css);
                 } else {
                     console.error(`CSS purge rejection on file: '${result.file}'`);
                 }
-            });
+            }));
+        }
+
+        // Combined-site copy of a production Vite dist. Skip when unset so a
+        // public portfolio clone does not need the private game zip.
+        const gameDist = process.env.GAME_DIST;
+        if (gameDist) {
+            const dest = path.join(dir.output, "portfolio", "elevator-ceo-web", "play");
+            fs.mkdirSync(dest, { recursive: true });
+            fs.cpSync(path.resolve(gameDist), dest, { recursive: true });
+            console.log(`Copied GAME_DIST (${path.resolve(gameDist)}) to ${dest}`);
         }
     });
 

@@ -2,6 +2,8 @@ name: Portfolio Build and Deploy
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [elevator-ceo-web-release]
   push:
     branches:
       - main
@@ -32,12 +34,34 @@ jobs:
       - name: NPM Setup
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - name: NPM install
         run: npm ci
       - name: NPM build
         run: npm run build
+      - name: Read game release pin
+        id: pin
+        run: echo "release=$(node -p "require('./_data/site.js').game.elevatorCeoWeb.release")" >> "$GITHUB_OUTPUT"
+      - name: Download game zip
+        env:
+          GH_TOKEN: ${{ secrets.GAME_BUILD_TOKEN }}
+        run: |
+          mkdir -p /tmp/game-dist
+          gh release download "${{ steps.pin.outputs.release }}" \
+            --repo unsaturated/ElevatorCEO-web-assets \
+            --pattern '*.zip' \
+            --dir /tmp/game-dist
+      - name: Unpack game into play/
+        run: |
+          DEST=dist/portfolio/elevator-ceo-web/play
+          mkdir -p "$DEST"
+          unzip -o /tmp/game-dist/*.zip -d "$DEST"
+          test -f "$DEST/index.html"
+          test -f "$DEST/manifest.webmanifest"
+          pngs=$(find "$DEST" -path '*/assets/*' -name '*.png' | wc -l)
+          echo "hashed png count: $pngs"
+          test "$pngs" -ge 40
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

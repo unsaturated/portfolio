@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 288" width="100%" role="img" aria-labelledby="prompt-bar-title prompt-bar-desc">
+<title id="prompt-bar-title">Prompt categories by share</title>
+<desc id="prompt-bar-desc">One-hundred percent stacked bar of Elevator CEO rewrite prompt categories.</desc>
+<style><![CDATA[
+.cat{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:12px;font-weight:400;fill:#888888;}
+.pct{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:11px;font-weight:400;fill:#888888;}
+.leader{stroke:#C8C8C8;stroke-width:1;}
+]]></style>
+<rect x="72.00" y="120.00" width="167.58" height="48" fill="#80B3FF"/>
+<rect x="242.08" y="120.00" width="158.27" height="48" fill="#8ABAFF"/>
+<rect x="402.85" y="120.00" width="121.03" height="48" fill="#94C0FF"/>
+<rect x="526.38" y="120.00" width="102.41" height="48" fill="#9FC7FF"/>
+<rect x="631.29" y="120.00" width="83.79" height="48" fill="#A9CDFF"/>
+<rect x="717.58" y="120.00" width="83.79" height="48" fill="#B3D4FF"/>
+<rect x="803.87" y="120.00" width="65.17" height="48" fill="#BDDAFF"/>
+<rect x="871.54" y="120.00" width="55.86" height="48" fill="#C7DFFF"/>
+<rect x="929.90" y="120.00" width="37.24" height="48" fill="#D2E5FF"/>
+<rect x="969.64" y="120.00" width="37.24" height="48" fill="#DCEAFF"/>
+<rect x="1009.38" y="120.00" width="18.62" height="48" fill="#E6F0FF"/>
+<line class="leader" x1="155.79" y1="120.00" x2="155.79" y2="100.00"/>
+<text class="cat" x="155.79" y="77.00" text-anchor="middle">Investigate</text>
+<text class="pct" x="155.79" y="92.00" text-anchor="middle">18%</text>
+<line class="leader" x1="321.21" y1="168.00" x2="321.21" y2="188.00"/>
+<text class="cat" x="321.21" y="207.00" text-anchor="middle">Meta / planning</text>
+<text class="pct" x="321.21" y="222.00" text-anchor="middle">17%</text>
+<line class="leader" x1="463.37" y1="120.00" x2="463.37" y2="100.00"/>
+<text class="cat" x="463.37" y="77.00" text-anchor="middle">Visual / layout parity</text>
+<text class="pct" x="463.37" y="92.00" text-anchor="middle">13%</text>
+<line class="leader" x1="577.59" y1="168.00" x2="577.59" y2="188.00"/>
+<text class="cat" x="577.59" y="207.00" text-anchor="middle">Decisions / options</text>
+<text class="pct" x="577.59" y="222.00" text-anchor="middle">11%</text>
+<line class="leader" x1="673.18" y1="120.00" x2="673.18" y2="100.00"/>
+<text class="cat" x="673.18" y="77.00" text-anchor="middle">Refactors / cleanup</text>
+<text class="pct" x="673.18" y="92.00" text-anchor="middle">9%</text>
+<line class="leader" x1="759.47" y1="168.00" x2="759.47" y2="188.00"/>
+<text class="cat" x="759.47" y="207.00" text-anchor="middle">Hardening / production</text>
+<text class="pct" x="759.47" y="222.00" text-anchor="middle">9%</text>
+<line class="leader" x1="836.45" y1="120.00" x2="836.45" y2="100.00"/>
+<text class="cat" x="836.45" y="77.00" text-anchor="middle">Behavioral / gameplay parity</text>
+<text class="pct" x="836.45" y="92.00" text-anchor="middle">7%</text>
+<line class="leader" x1="899.47" y1="168.00" x2="899.47" y2="188.00"/>
+<text class="cat" x="899.47" y="207.00" text-anchor="middle">Ports</text>
+<text class="pct" x="899.47" y="222.00" text-anchor="middle">6%</text>
+<line class="leader" x1="948.52" y1="120.00" x2="948.52" y2="62.00"/>
+<text class="cat" x="948.52" y="39.00" text-anchor="middle">Assets &amp; content</text>
+<text class="pct" x="948.52" y="54.00" text-anchor="middle">4%</text>
+<line class="leader" x1="988.26" y1="168.00" x2="988.26" y2="226.00"/>
+<text class="cat" x="988.26" y="245.00" text-anchor="middle">Platform adaptation</text>
+<text class="pct" x="988.26" y="260.00" text-anchor="middle">4%</text>
+<line class="leader" x1="1018.69" y1="120.00" x2="1018.69" y2="100.00"/>
+<text class="cat" x="1018.69" y="77.00" text-anchor="middle">Verification</text>
+<text class="pct" x="1018.69" y="92.00" text-anchor="middle">2%</text>
+</svg>

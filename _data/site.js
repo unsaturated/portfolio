@@ -1,5 +1,12 @@
 module.exports = {
     language: "en",
+    game: {
+        elevatorCeoWeb: {
+            repo: "unsaturated/ElevatorCEO-web-assets",
+            release: "v1.0.0",
+            url: "/portfolio/elevator-ceo-web/play/"
+        }
+    },
     "menu": [
         {
             "text": "Résumé",
