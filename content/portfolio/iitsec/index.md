@@ -1,5 +1,5 @@
 ---
-title: Applying Practices from Instructor Systems to Designing Simulated Aircraft Avionics
+title: Applying Practices from Instructor Applications to Creating Simulated Avionics Displays
 shorttitle: Simulated Avionics
 subtitle: Peer reviewed paper on simulated aircraft avionics built using .NET and WPF. Presented at I/ITSEC 2012 conference.
 layout: single.njk
