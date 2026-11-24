@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 615" width="660" height="396" style="font-family: var(--bs-body-font-family, Helvetica, Arial, sans-serif)">
+  <title>Figure 5. ViewModel Initialization</title>
+  <defs>
+    <marker id="fig5-arrow" viewBox="0 0 18 14" refX="18" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L18,7 L0,14 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="20" y="18" width="238" height="88"/>
+    <rect x="20" y="210" width="238" height="88"/>
+    <rect x="417" y="212" width="296" height="88"/>
+    <rect x="708" y="320" width="296" height="88"/>
+    <rect x="708" y="515" width="296" height="88"/>
+
+    <path d="M139,106 V128"/>
+    <path d="M139,172 V208" marker-end="url(#fig5-arrow)"/>
+    <path d="M258,255 H284"/>
+    <path d="M383,255 H415" marker-end="url(#fig5-arrow)"/>
+
+    <path d="M567,300 V557 H610 M662,557 H708"/>
+    <path d="M567,365 H610 M662,365 H708"/>
+  </g>
+
+  <path d="M856,408 V442 M856,482 V515" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" stroke-opacity="0.6"/>
+
+  <g fill="currentColor" font-size="22" text-anchor="middle" dominant-baseline="central">
+    <text x="139" y="62">Main</text>
+    <text x="139" y="150">Initialize</text>
+    <text x="139" y="254">Controller</text>
+    <text x="333" y="255">Initialize</text>
+    <text x="565" y="256">WindowViewModel</text>
+    <text x="636" y="365">new</text>
+    <text x="636" y="557">new</text>
+    <text x="856" y="364">MFD View 1</text>
+    <text x="856" y="462">bind</text>
+    <text x="856" y="559">MFD Model 1</text>
+  </g>
+</svg>

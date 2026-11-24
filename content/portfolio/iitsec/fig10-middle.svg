@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="782" height="458" style="font-family: var(--bs-body-font-family, Helvetica, Arial, sans-serif)">
+  <title>Figure 10. Using the Model as the Middle</title>
+  <defs>
+    <marker id="fig10-arrow" viewBox="0 0 18 14" refX="18" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L18,7 L0,14 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 6" stroke-opacity="0.6">
+    <path d="M370,80 V585"/>
+    <path d="M657,80 V585"/>
+  </g>
+
+  <g stroke="currentColor" stroke-width="1.5" marker-end="url(#fig10-arrow)">
+    <path d="M62,80 V584" stroke-opacity="0.6"/>
+    <path d="M965,80 V584" stroke-opacity="0.6"/>
+  </g>
+
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="104" y="98" width="246" height="62"/>
+    <rect x="104" y="261" width="246" height="62"/>
+    <rect x="104" y="424" width="246" height="62"/>
+    <rect x="390" y="180" width="246" height="62"/>
+    <rect x="390" y="342" width="246" height="62"/>
+    <rect x="390" y="505" width="246" height="62"/>
+    <rect x="677" y="98" width="246" height="62"/>
+    <rect x="677" y="261" width="246" height="62"/>
+    <rect x="677" y="424" width="246" height="62"/>
+  </g>
+
+  <g fill="currentColor" font-size="21" text-anchor="middle" dominant-baseline="central">
+    <text x="227" y="45">Avionics Engineer</text>
+    <text x="227" y="73">works on...</text>
+    <text x="513" y="45">Both sides</text>
+    <text x="513" y="73">collaborate on...</text>
+    <text x="800" y="45">Instructor Support Engineer</text>
+    <text x="800" y="73">works on...</text>
+
+    <text x="227" y="129">Deep Model</text>
+    <text x="227" y="292">Deep Model</text>
+    <text x="227" y="455">Testing</text>
+    <text x="513" y="211">Model</text>
+    <text x="513" y="373">Model</text>
+    <text x="513" y="536">Testing</text>
+    <text x="800" y="129">View</text>
+    <text x="800" y="292">Model</text>
+    <text x="800" y="455">Testing</text>
+
+    <text transform="translate(42,303) rotate(-90)">TIME</text>
+    <text transform="translate(985,303) rotate(90)">TIME</text>
+  </g>
+</svg>

@@ -1,5 +1,13 @@
 const path = require("path");
+const fs = require("node:fs");
 const eleventyImage = require("@11ty/eleventy-img");
+
+function escapeAttribute(value) {
+	return String(value)
+		.replace(/&/g, "&amp;")
+		.replace(/"/g, "&quot;")
+		.replace(/</g, "&lt;");
+}
 
 function relativeToInputPath(inputPath, relativeFilePath) {
 	let split = inputPath.split("/");
@@ -50,5 +58,21 @@ module.exports = function(eleventyConfig) {
 		};
 
 		return eleventyImage.generateHTML(metadata, imageAttributes, options);
+	});
+
+	// Inlined rather than linked so diagrams drawn with currentColor follow the
+	// page's light/dark theme, which an <img> cannot see.
+	eleventyConfig.addShortcode("svg", function svgShortcode(src, alt, cssClass) {
+		let input = relativeToInputPath(this.page.inputPath, src);
+		let markup = fs.readFileSync(input, "utf8");
+		let attributes = [`role="img"`, `aria-label="${escapeAttribute(alt)}"`];
+		if(cssClass) {
+			attributes.push(`class="${escapeAttribute(cssClass)}"`);
+		}
+		// A blank line would end Markdown's HTML block partway through the SVG.
+		return markup
+			.replace(/^[\s\S]*?<svg\b/, `<svg ${attributes.join(" ")}`)
+			.replace(/\n\s*\n/g, "\n")
+			.trim();
 	});
 };

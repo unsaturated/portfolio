@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 590" width="824" height="467" style="font-family: var(--bs-body-font-family, Helvetica, Arial, sans-serif)">
+  <title>Figure 6. MVVM and ARINC 661</title>
+  <defs>
+    <marker id="fig6-arrow" viewBox="0 0 18 14" refX="18" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L18,7 L0,14 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <path d="M565,8 V582" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 6" stroke-opacity="0.6"/>
+
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="248" y="42" width="280" height="104"/>
+    <rect x="248" y="268" width="280" height="104"/>
+    <rect x="248" y="442" width="280" height="104"/>
+    <rect x="606" y="42" width="280" height="104"/>
+    <rect x="606" y="268" width="280" height="104"/>
+    <rect x="606" y="442" width="280" height="104"/>
+
+    <path d="M128,42 H107 V372 H128"/>
+    <path d="M128,442 H107 V546 H128"/>
+    <path d="M232,146 Q215,146 215,163 V195 Q215,207 203,207 Q215,207 215,219 V251 Q215,268 232,268"/>
+    <path d="M892,146 Q909,146 909,163 V195 Q909,207 921,207 Q909,207 909,219 V251 Q909,268 892,268"/>
+  </g>
+
+  <g stroke="currentColor" stroke-width="1.5" marker-end="url(#fig6-arrow)">
+    <path d="M318,268 V234 M318,180 V148"/>
+    <path d="M456,146 V180 M456,234 V266"/>
+    <path d="M318,408 V374"/>
+    <path d="M456,404 V440"/>
+    <path d="M676,268 V234 M676,180 V148"/>
+    <path d="M815,146 V180 M815,234 V266"/>
+    <path d="M676,408 V374"/>
+    <path d="M815,404 V440"/>
+  </g>
+
+  <g fill="currentColor" font-size="20" text-anchor="middle" dominant-baseline="central">
+    <text x="389" y="18">MVVM</text>
+    <text x="746" y="18">ARINC 661</text>
+
+    <text x="388" y="82">MFD</text>
+    <text x="388" y="106">View</text>
+    <text x="388" y="308">MFD</text>
+    <text x="388" y="332">Model</text>
+    <text x="388" y="483">Host Simulation with</text>
+    <text x="388" y="507">Avionics Deep Model</text>
+
+    <text x="746" y="82">Cockpit Display System</text>
+    <text x="746" y="106">(CDS)</text>
+    <text x="746" y="308">User Application</text>
+    <text x="746" y="332">(UA)</text>
+    <text x="746" y="494">Other Avionics Systems</text>
+
+    <text x="318" y="196">Binding to</text>
+    <text x="318" y="219">Source Data</text>
+    <text x="456" y="196">Binding from</text>
+    <text x="456" y="219">Target Control</text>
+    <text x="320" y="424">TCP</text>
+    <text x="458" y="389">TCP</text>
+
+    <text x="676" y="196">Messages</text>
+    <text x="676" y="219">to Widgets</text>
+    <text x="815" y="196">Events from</text>
+    <text x="815" y="219">User</text>
+    <text x="676" y="424">Ethernet/Serial</text>
+    <text x="815" y="389">Ethernet/Serial</text>
+
+    <text x="58" y="196">Windows</text>
+    <text x="58" y="219">PC</text>
+    <text x="60" y="470">Realtime</text>
+    <text x="60" y="494">Simulation</text>
+    <text x="60" y="518">PC</text>
+    <text x="166" y="185">.NET</text>
+    <text x="166" y="208">Data</text>
+    <text x="166" y="231">Binding</text>
+  </g>
+
+  <g fill="currentColor" font-size="20" dominant-baseline="central">
+    <text x="935" y="185">Runtime</text>
+    <text x="935" y="208">Protocol</text>
+    <text x="935" y="231">Definition</text>
+  </g>
+</svg>

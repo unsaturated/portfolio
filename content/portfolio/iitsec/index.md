@@ -168,10 +168,8 @@ Using a controller object acts as a clearinghouse of all ViewModel pairs, as sho
 <div class="container">
     <div class="d-flex justify-content-center">
         <figure class="figure">
-            {% image "fig4-associations.png",
+            {% svg "fig4-associations.svg",
             "Figure 4. Object Associations and Data Events",
-            [412, 824],
-            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 4. Object Associations and Data Events</figcaption>
@@ -190,10 +188,8 @@ For our instructor applications, the functional flow is easy to follow:
 <div class="container">
     <div class="d-flex justify-content-center">
         <figure class="figure">
-            {% image "fig5-viewmodel.png",
+            {% svg "fig5-viewmodel.svg",
             "Figure 5.  ViewModel Initialization",
-            [330, 660],
-            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 5.  ViewModel Initialization</figcaption>
@@ -250,10 +246,8 @@ The FalconView map control provides a concrete example that WPF helped fulfill a
 <div class="container">
     <div class="d-flex justify-content-center">
         <figure class="figure">
-            {% image "fig6-mvvm.png",
+            {% svg "fig6-mvvm.svg",
             "Figure 6.  MVVM and ARINC 661",
-            [314, 629],
-            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 6.  MVVM and ARINC 661</figcaption>
@@ -343,10 +337,8 @@ Developing an instructor application typically involves a lot of question/respon
 <div class="container">
     <div class="d-flex justify-content-center">
         <figure class="figure">
-            {% image "fig9-process.png",
+            {% svg "fig9-process.svg",
             "Figure 9.  Process by Ability",
-            [412, 824],
-            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 9.  Process by Ability</figcaption>
@@ -369,10 +361,8 @@ Classes are commonly named so that both sides understand their purpose and can t
 <div class="container">
     <div class="d-flex justify-content-center">
         <figure class="figure">
-            {% image "fig10-middle.png",
+            {% svg "fig10-middle.svg",
             "Figure 10.  Using the Model as the Middle",
-            [391, 782],
-            "100vw",
             "figure-img img-fluid"
             %}
             <figcaption class="figure-caption text-center">Figure 10.  Using the Model as the Middle</figcaption>

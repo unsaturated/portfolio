@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 410" width="824" height="330" style="font-family: var(--bs-body-font-family, Helvetica, Arial, sans-serif)">
+  <title>Figure 9. Process by Ability</title>
+  <defs>
+    <linearGradient id="fig9-fade-down" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="currentColor" stop-opacity="1"/>
+      <stop offset="1" stop-color="currentColor" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="fig9-fade-up" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="currentColor" stop-opacity="1"/>
+      <stop offset="1" stop-color="currentColor" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="329" y="45" width="358" height="88"/>
+    <rect x="329" y="178" width="358" height="88"/>
+    <rect x="329" y="310" width="358" height="88"/>
+    <path d="M238,113 H28 V303 H238"/>
+    <path d="M778,113 H988 V303 H778"/>
+  </g>
+
+  <g stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M261,45 H275 V362 H298 L268,398 L238,362 H261 Z" fill="url(#fig9-fade-down)"/>
+    <path d="M748,40 L778,76 H755 V398 H741 V76 H718 Z" fill="url(#fig9-fade-up)"/>
+  </g>
+
+  <g fill="currentColor" font-size="28" text-anchor="middle" dominant-baseline="central">
+    <text x="508" y="89">View</text>
+    <text x="508" y="222">Model</text>
+    <text x="508" y="354">Deep Model</text>
+  </g>
+
+  <g fill="currentColor" font-size="28" dominant-baseline="central">
+    <text x="45" y="150">Increasing</text>
+    <text x="45" y="189">Avionics</text>
+    <text x="45" y="228">Experience</text>
+    <text x="45" y="267">(M&amp;S)</text>
+    <text x="795" y="150">Increasing</text>
+    <text x="795" y="189">Artistic</text>
+    <text x="795" y="228">Experience</text>
+    <text x="795" y="267">(Design)</text>
+  </g>
+</svg>

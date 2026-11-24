@@ -12,6 +12,18 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="generator" content="{{ eleventy.generator }}" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+            <meta name="color-scheme" content="light dark" />
+            {# Runs before the stylesheet so the page never paints in the wrong theme. #}
+            <script>
+                (function () {
+                    var stored = null;
+                    try { stored = localStorage.getItem("theme"); } catch (e) {}
+                    var theme = stored === "light" || stored === "dark"
+                        ? stored
+                        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                    document.documentElement.setAttribute("data-bs-theme", theme);
+                })();
+            </script>
             {%- for key,value in metadata %}
                 {%- if key.indexOf("og:") == 0 %}
                 <meta property="{{ key }}" content="{{ value }}">
@@ -27,6 +39,10 @@
             <link rel="icon" type="image/png" href="/img/favicons/favicon-128.png" sizes="128x128"/>
             <link rel="stylesheet" href="/css/main.css" />
             <link rel="stylesheet" href="/css/fonts.css" />
+            <style>
+                [data-bs-theme="light"] .theme-icon-to-light,
+                [data-bs-theme="dark"] .theme-icon-to-dark { display: none; }
+            </style>
             <script src="/js/main.js"></script>
         {% endblock head%}
     </head>
