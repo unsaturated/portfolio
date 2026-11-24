@@ -4,17 +4,17 @@
 
     {% include 'nav.njk' %}
 
-    <div class="container">
+    <main class="container">
         <hr/>
         <h1 class="display-4">{{ title }}</h1>
         {% if subtitle|length > 0 %}
-        <p class="lead text-secondary">{{ subtitle }}</p>
+        <p class="lead">{{ subtitle }}</p>
             {% if supplementary|length > 0 %}
                 {% for item in supplementary %}
                     {% set _br = '<br/>' if (loop.revindex0 >= 0 and not loop.first) else '' %}
                     {% if item.file %}
                         {{ _br|safe }}
-                        <small class="text-secondary">
+                        <small>
                             <i class="{{ item.icon|default('bi bi-link') }}"></i> 
                             <a href="{{ item.file }}" 
                                 class="link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
@@ -23,7 +23,7 @@
                         </small>
                     {% elseif item.link %}
                         {{ _br|safe }}
-                        <small class="text-secondary">
+                        <small>
                             <i class="{{ item.icon|default('bi bi-link') }}"></i> 
                             <a href="{{ item.link }}" 
                                 class="link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
@@ -33,7 +33,7 @@
                     {% elseif item.image %}
                         {% set _modalId = item.text|trim|lower|replace(r/[\.\s]+/g, "-") %}
                         {{ _br|safe }}
-                        <small class="text-secondary">
+                        <small>
                             <i class="{{ item.icon|default('bi bi-link') }}"></i> 
                             <a href="#{{ _modalId }}" 
                                 data-bs-toggle="modal"
@@ -44,7 +44,7 @@
                         </small>
                     {% else %}
                         {{ _br|safe }}
-                        <small class="text-secondary">
+                        <small>
                         <i class="{{ item.icon|default('bi bi-circle') }}"></i> {{ item.text }}</small>
                     {% endif %}
                 {% endfor %}
@@ -52,7 +52,7 @@
          {% endif %}
         <hr/>
         {{ content | safe }}
-    </div>
+    </main>
 
     {% for item in supplementary %}
     {% if item.image %}
