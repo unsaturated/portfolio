@@ -96,7 +96,7 @@ Even in these green days of Ai, the landscape reminds me of web search in the ea
 
 How did I prompt for my rewrite? No need for details up front. Keeping requirements loose proved effective:
 
-<div class="alert alert-light" role="info">
+<div class="alert alert-light" role="note">
   <div class="d-flex align-items-start gap-2 font-monospace">
     <i class="bi-chevron-right flex-shrink-0"></i>
     <p class="mb-0" style="font-size: 0.75rem;">I have a complete game I wrote in Objective-C using the cocos2d-iphone framework. The @ElevatorCEO folder contains all of my source code and binary assets (images and audio). The @cocos2d-iphone folder contains the source used at the time to render the game. My goal is to re-write the game in TypeScript using the @Babylon.js framework. The first step is take the game and lift it out of the past and into a modern framework and deploy first to the web. I want the focus of the work to be on conversion code from Objective-C to Typescript and the equivalent interfaces used by Babylon.</p>
@@ -132,7 +132,7 @@ Domain and project experience play a part but asking grounded questions—even t
 
 As the diagram illustrates, not every query was about bugs or features. Here are some of the queries that nudged in the direction I thought the code should go. I kept an open mind and let the LLM probabilities surface options I wouldn't have considered. The questions, however, and the choice of which answer to keep, were mine.
 
-<div class="alert alert-light" role="info">
+<div class="alert alert-light" role="note">
   <div class="d-flex align-items-start gap-2 font-monospace">
     <i class="bi-chevron-right flex-shrink-0"></i>
     <p class="mb-0" style="font-size: 0.75rem;">Would a wrapper be best or convert the code to the true Babylon interfaces?</p>

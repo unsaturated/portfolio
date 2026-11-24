@@ -14,7 +14,7 @@
                 {% set subtitle = child.data.subtitle %}
                 <div class="card p-3 shadow-sm mb-2 ">
                     {% if (child.data.image | length) > 0 %}
-                        <a href="{{ child.url }}"><img class="card-img-top mx-auto d-block img-fluid rounded" src="{{ blog_image }}" alt="{{ child.title }}"></a>
+                        <a href="{{ child.url }}" aria-hidden="true" tabindex="-1"><img class="card-img-top mx-auto d-block img-fluid rounded" src="{{ blog_image }}" alt=""></a>
                     {% endif %}
                     <div class="card-body">
                         <h4 class="card-title"><a href="{{ child.url }}" class="link-underline link-underline-opacity-0">{{ portfolio_title }}</a></h4>
